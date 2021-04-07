@@ -6,11 +6,12 @@ interface Props {
   name: string;
   gender: "Female" | "Male" | "unknown" | "n/a";
   birthyear: string;
+  onPress: () => void;
 }
 
-export const Card: React.FC<Props> = ({ name, gender, birthyear }) => {
+export const Card: React.FC<Props> = ({ name, gender, birthyear, onPress }) => {
   return (
-    <Styled.Container>
+    <Styled.Container onPress={onPress}>
       <Styled.Name>{name}</Styled.Name>
       <Text>
         <Styled.Label>Gender: </Styled.Label>

@@ -1,8 +1,9 @@
 import styled from "styled-components/native";
+import { scale } from "react-native-size-matters";
 
-export const Container = styled.View`
-  width: 150px;
-  height: 150px;
+export const Container = styled.TouchableOpacity`
+  width: ${scale(150)}px;
+  height: ${scale(150)}px;
 
   border-radius: 10px;
 
