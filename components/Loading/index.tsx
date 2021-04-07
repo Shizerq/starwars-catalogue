@@ -9,6 +9,7 @@ export const Loading: React.FC<Props> = ({ style }) => {
   return (
     <ActivityIndicator
       size="large"
+      color="#ffffff"
       style={[
         style,
         {
